@@ -8,7 +8,8 @@
     "start": "next start",
     "format": "prettier --write \"./src/**/*.{ts,tsx,json,css,scss,less}\" --config ./.prettierrc",
     "lint": "yarn format && eslint --fix ./src",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepare": "husky"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
