@@ -1,0 +1,21 @@
+html,
+html[data-theme='light'] {
+  // Brand
+  --primary-color: #73777b;
+  --secondary-color: #8eaeba;
+  --tertiary-color: #3d5963;
+
+  // Default
+  --white: #ffffff;
+  --dark: #0d0c0c;
+  --success: #20ac2e;
+  --info: #586ee0;
+  --danger: #e05858;
+  --warning: #e0e058;
+
+  --gray: #adb1b4;
+  --gray-100: #bdcacf;
+
+  // FONT FAMILY
+  --font-primary: 'Poppins', sans-serif;
+}
