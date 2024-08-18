@@ -33,7 +33,8 @@ const config: Config = {
       }
     },
     fontFamily: {
-      primary: 'var(--font-primary)'
+      primary: 'var(--font-primary)',
+      secondary: 'var(--font-secondary)'
     },
     colors: {
       // default
@@ -41,11 +42,14 @@ const config: Config = {
       transparent: 'transparent',
       current: 'currentColor',
       black: '#000000',
+      label: 'var(--color-label)',
+      sub: 'var(--color-sub)',
+      20: 'var(--bg-20)',
+      50: 'var(--bg-50)',
 
       // theme
       primary: 'var(--primary-color)',
       secondary: 'var(--secondary-color)',
-      tertiary: 'var(--tertiary-color)',
       white: 'var(--white)',
       dark: 'var(--dark)',
       success: 'var(--success)',
@@ -82,6 +86,28 @@ const config: Config = {
       },
       borderRadius: {
         '4xl': '2.25rem'
+      },
+      fontSize: {
+        h1: '48px',
+        h2: '40px',
+        h3: '33px',
+        h4: '28px',
+        h5: '23px',
+        title1: '19px',
+        title2: '16px',
+        body: '13px',
+        caption: '11px'
+      },
+      boxShadow: {
+        box: '0 0 30px rgba(0, 0, 0, 0.05)'
+      },
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '3/4': '3 / 4',
+        '3/2': '3 / 2',
+        '2/3': '2 / 3',
+        '16/9': '16 / 9',
+        '9/16': '9 / 16'
       }
     }
   },
