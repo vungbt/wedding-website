@@ -34,7 +34,8 @@ const config: Config = {
     },
     fontFamily: {
       primary: 'var(--font-primary)',
-      secondary: 'var(--font-secondary)'
+      secondary: 'var(--font-secondary)',
+      tertiary: 'var(--font-tertiary)'
     },
     colors: {
       // default
@@ -46,6 +47,7 @@ const config: Config = {
       sub: 'var(--color-sub)',
       20: 'var(--bg-20)',
       50: 'var(--bg-50)',
+      line: 'var(--line)',
 
       // theme
       primary: 'var(--primary-color)',

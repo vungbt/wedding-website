@@ -5,10 +5,13 @@ html[data-theme='light'] {
   --secondary-color: #a2783a;
 
   --color-label: #adadad;
-  --color-sub: #666 --bg-20: rgb(0 0 0 / 20%);
+  --color-sub: #666;
+  --line: #ebebeb;
+  --bg-20: rgb(0 0 0 / 20%);
   --bg-50: rgba(0, 0, 0, 0.05) // Default
     --white: #ffffff;
   --dark: #000000;
+  --white: #ffffff;
   --success: #20ac2e;
   --info: #586ee0;
   --danger: #e05858;
@@ -17,4 +20,5 @@ html[data-theme='light'] {
   // FONT FAMILY
   --font-primary: 'Nunito Sans', sans-serif;
   --font-secondary: 'Grey Qo', cursive;
+  --font-tertiary: 'Cormorant Garamond', serif;
 }

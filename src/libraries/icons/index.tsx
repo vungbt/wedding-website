@@ -7,6 +7,7 @@ import Bars from './bars';
 import Close from './close';
 import ChevronLeft from './chevron-left';
 import ChevronRight from './chevron-right';
+import Tiktok from './tiktok';
 export type IconProps = {
   className?: string;
   style?: CSSProperties;
@@ -24,7 +25,8 @@ export type IconName =
   | 'bars'
   | 'close'
   | 'chevron-right'
-  | 'chevron-left';
+  | 'chevron-left'
+  | 'tiktok';
 export type IconsType = Record<IconName, Icon>;
 
 export const Icons: IconsType = {
@@ -51,6 +53,9 @@ export const Icons: IconsType = {
   },
   'chevron-right': (props: IconProps) => {
     return <ChevronRight {...props} />;
+  },
+  tiktok: (props: IconProps) => {
+    return <Tiktok {...props} />;
   }
 };
 
