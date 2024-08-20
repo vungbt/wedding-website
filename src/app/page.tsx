@@ -9,7 +9,6 @@ import {
   WeddingGallery,
   WelcomeBlock
 } from '@/libraries/blocks';
-import { Button } from '@/libraries/common';
 
 export default function Home() {
   return (
