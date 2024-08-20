@@ -10,13 +10,15 @@ type SideBarProps = {
 
 export default function SideBar({ className }: SideBarProps) {
   const menus = [
-    { title: 'Trang chủ', href: '/' },
-    { title: 'Về chúng tôi', href: '/' },
-    { title: 'Câu truyện tình yêu', href: '/' },
-    { title: 'Lời mời', href: '/' },
-    { title: 'Địa điểm', href: '/' },
-    { title: 'Bộ ảnh cưới', href: '/' },
-    { title: 'RSVP', href: '/' }
+    { title: 'Trang chủ', href: '#welcome' },
+    { title: 'Câu truyện tình yêu', href: '#our-love-story' },
+    { title: 'Lời mời', href: '#invitation' },
+    { title: 'Địa điểm', href: '#location' },
+    { title: 'Phù dâu', href: '#bridesmaids' },
+    { title: 'Phù rể', href: '#groomsmen' },
+    { title: 'Bộ ảnh cưới', href: '#wedding-gallery' },
+    { title: 'Lời chúc', href: '#testimonials' },
+    { title: 'RSVP', href: '#rsvp' }
   ];
   return (
     <div className={clsx(className, 'flex flex-col')}>

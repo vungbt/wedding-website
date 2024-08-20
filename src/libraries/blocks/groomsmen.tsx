@@ -33,7 +33,7 @@ export function Groomsmen({ className }: GroomsmenProps) {
     '/groomsmen/04.jpg'
   ];
   return (
-    <section className={clsx(className, 'px-7 pr-0 py-20')}>
+    <section id="groomsmen" className={clsx(className, 'px-7 pr-0 py-20')}>
       <LabelBlock label="Phù rể" subLabel="Groomsmen" className="mb-7" />
 
       {/* slider */}

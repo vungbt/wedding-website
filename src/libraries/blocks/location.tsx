@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button } from '../common';
+import { Button, ButtonLink } from '../common';
 import { RenderIcon } from '../icons';
 import { LabelBlock } from '../common/label-block';
 
 export function Location() {
   return (
-    <section className="location py-20">
+    <section id="location" className="location py-20">
       <div className="container flex items-center justify-center flex-col mb-16">
         <LabelBlock
           label="Địa chỉ"
@@ -74,7 +74,7 @@ export function Location() {
 
         {/* button */}
         <div className="flex items-center justify-center relative z-[1] ">
-          <Button label="RSVP" />
+          <ButtonLink href="#rsvp" label="RSVP" />
         </div>
       </div>
     </section>

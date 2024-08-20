@@ -1,3 +1,3 @@
 export const RouterPath = {
-  Home: '/'
+  Home: '#welcome'
 };

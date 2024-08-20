@@ -69,7 +69,7 @@ export function Testimonials() {
     }
   };
   return (
-    <section className="testiominal py-20">
+    <section id="testimonials" className="testiominal py-20">
       <div className="px-7 flex items-center relative z-10 gap-2">
         <div className="w-2/5">
           <LabelBlock
@@ -85,7 +85,7 @@ export function Testimonials() {
 
           {/* actions */}
           <div className="flex items-center gap-4 mt-6">
-            <ButtonLink href="/" label="Xác nhận" />
+            <ButtonLink href="#rsvp" label="Xác nhận" />
             <div className="flex items-center gap-2">
               <button className="button-arrow" onClick={() => onHandleSlider('prev')}>
                 <RenderIcon name="chevron-left" className="!w-3 !h-3" />

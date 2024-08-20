@@ -20,6 +20,7 @@
     line-height: 1.6;
     -webkit-text-size-adjust: 100%;
     font-size: 15px;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -43,6 +44,10 @@
   ::placeholder {
     color: var(--color-label) !important;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .bg-dark-80 {

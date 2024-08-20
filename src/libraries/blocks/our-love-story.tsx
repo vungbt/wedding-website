@@ -3,7 +3,7 @@ import React from 'react';
 
 export function OurLoveStory() {
   return (
-    <div className="py-20 px-7 flex w-full gap-2">
+    <section id="our-love-story" className="py-20 px-7 flex w-full gap-2">
       <div className="w-1/2 flex flex-col gap-5">
         <h1 className="text-2xl uppercase">Quỳnh Như & Người Thương</h1>
         <p className="font-tertiary text-secondary text-[20px] italic">
@@ -30,6 +30,6 @@ export function OurLoveStory() {
       <div className="relative w-1/2 aspect-1 h-fit">
         <Image fill src="/our-love/our_love_1.jpg" alt="our love" className="aspect-1 h-auto" />
       </div>
-    </div>
+    </section>
   );
 }

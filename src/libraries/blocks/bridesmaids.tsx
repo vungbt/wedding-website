@@ -33,7 +33,7 @@ export function Bridesmaids({ className }: BridesmaidsProps) {
     '/bridesmaids/04.jpg'
   ];
   return (
-    <section className={clsx(className, 'px-7 pr-0 py-20 bg-primary')}>
+    <section id="bridesmaids" className={clsx(className, 'px-7 pr-0 py-20 bg-primary')}>
       <LabelBlock label="Phù dâu" subLabel="Bridesmaids" className="mb-7" />
 
       {/* slider */}

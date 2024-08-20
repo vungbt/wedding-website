@@ -66,7 +66,7 @@ export function Attend({}: AttendProps) {
   }, [isBride]);
 
   return (
-    <section className="py-20 px-7 bg-primary">
+    <section id="rsvp" className="py-20 px-7 bg-primary">
       <LabelBlock label="Liên hệ" subLabel="location" />
       <div className="flex mt-6 gap-3">
         {/* contact */}
