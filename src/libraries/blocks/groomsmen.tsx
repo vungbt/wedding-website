@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import React from 'react';
 import { LabelBlock } from '../common/label-block';
@@ -32,7 +33,7 @@ export function Groomsmen({ className }: GroomsmenProps) {
     '/groomsmen/04.jpg'
   ];
   return (
-    <div className={clsx(className, 'px-7 pr-0 py-20')}>
+    <section className={clsx(className, 'px-7 pr-0 py-20')}>
       <LabelBlock label="Phù rể" subLabel="Groomsmen" className="mb-7" />
 
       {/* slider */}
@@ -43,6 +44,6 @@ export function Groomsmen({ className }: GroomsmenProps) {
           </div>
         ))}
       </Slider>
-    </div>
+    </section>
   );
 }

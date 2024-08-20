@@ -48,19 +48,19 @@ export default function SideBar({ className }: SideBarProps) {
         <div className="flex items-center gap-3 mb-4">
           <Link
             href="/"
-            className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center"
+            className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center transition-all ease-linear hover:bg-black hover:text-white"
           >
             <RenderIcon name="facebook" className="!w-4 !h-4" />
           </Link>
           <Link
             href="/"
-            className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center"
+            className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center transition-all ease-linear hover:bg-black hover:text-white"
           >
             <RenderIcon name="instagram" className="!w-4 !h-4" />
           </Link>
           <Link
             href="/"
-            className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center"
+            className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center  transition-all ease-linear hover:bg-black hover:text-white"
           >
             <RenderIcon name="tiktok" className="!w-4 !h-4" />
           </Link>

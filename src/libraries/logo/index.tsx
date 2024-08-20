@@ -13,7 +13,7 @@ export default function Logo({ className }: LogoProps) {
       className={clsx('flex flex-col items-center justify-center gap-2', className)}
     >
       <span className="font-tertiary text-[40px] font-semibold text-center uppercase leading-5 tracking-normal flex items-center">
-        PWE
+        BTW
         <i className="text-base relative">®</i>
       </span>
       <span className="font-secondary text-3xl text-secondary font-medium capitalize flex gap-1a items-center">

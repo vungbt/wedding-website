@@ -2,3 +2,8 @@ export * from './welcome';
 export * from './our-love-story';
 export * from './bridesmaids';
 export * from './groomsmen';
+export * from './invitation';
+export * from './location';
+export * from './wedding-gallery';
+export * from './testimonials';
+export * from './attend';

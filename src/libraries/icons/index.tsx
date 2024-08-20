@@ -8,6 +8,10 @@ import Close from './close';
 import ChevronLeft from './chevron-left';
 import ChevronRight from './chevron-right';
 import Tiktok from './tiktok';
+import Line from './line';
+import LineTwo from './line-two';
+import Cheers from './cheers';
+import Church from './church';
 export type IconProps = {
   className?: string;
   style?: CSSProperties;
@@ -26,7 +30,11 @@ export type IconName =
   | 'close'
   | 'chevron-right'
   | 'chevron-left'
-  | 'tiktok';
+  | 'tiktok'
+  | 'line'
+  | 'line-two'
+  | 'cheers'
+  | 'church';
 export type IconsType = Record<IconName, Icon>;
 
 export const Icons: IconsType = {
@@ -56,6 +64,18 @@ export const Icons: IconsType = {
   },
   tiktok: (props: IconProps) => {
     return <Tiktok {...props} />;
+  },
+  line: (props: IconProps) => {
+    return <Line {...props} />;
+  },
+  'line-two': (props: IconProps) => {
+    return <LineTwo {...props} />;
+  },
+  cheers: (props: IconProps) => {
+    return <Cheers {...props} />;
+  },
+  church: (props: IconProps) => {
+    return <Church {...props} />;
   }
 };
 

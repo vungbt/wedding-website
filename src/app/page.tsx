@@ -1,13 +1,28 @@
-import { Bridesmaids, Groomsmen, OurLoveStory, WelcomeBlock } from '@/libraries/blocks';
+import {
+  Attend,
+  Bridesmaids,
+  Groomsmen,
+  Invitation,
+  Location,
+  OurLoveStory,
+  Testimonials,
+  WeddingGallery,
+  WelcomeBlock
+} from '@/libraries/blocks';
 import { Button } from '@/libraries/common';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <WelcomeBlock />
       <OurLoveStory />
+      <Invitation />
+      <Location />
       <Bridesmaids />
       <Groomsmen />
-    </div>
+      <WeddingGallery />
+      <Testimonials />
+      <Attend />
+    </>
   );
 }
