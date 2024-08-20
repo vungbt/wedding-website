@@ -11,7 +11,7 @@ type SideBarProps = {
 export default function SideBar({ className }: SideBarProps) {
   const menus = [
     { title: 'Trang chủ', href: '#welcome' },
-    { title: 'Câu truyện tình yêu', href: '#our-love-story' },
+    { title: 'Câu chuyện tình yêu', href: '#our-love-story' },
     { title: 'Lời mời', href: '#invitation' },
     { title: 'Địa điểm', href: '#location' },
     { title: 'Phù dâu', href: '#bridesmaids' },

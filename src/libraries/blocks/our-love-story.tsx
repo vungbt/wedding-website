@@ -5,7 +5,7 @@ export function OurLoveStory() {
   return (
     <section id="our-love-story" className="py-20 px-7 flex w-full gap-2">
       <div className="w-1/2 flex flex-col gap-5">
-        <h1 className="text-2xl uppercase">Quỳnh Như & Người Thương</h1>
+        <h1 className="text-2xl uppercase">Quỳnh Như & Bình Minh</h1>
         <p className="font-tertiary text-secondary text-[20px] italic">
           We would love to meet up and chat about how we can make your dream wedding happen!
         </p>

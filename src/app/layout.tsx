@@ -3,7 +3,7 @@ import '@/styles/globals.scss';
 import { MainLayout } from '@/libraries/layouts';
 
 export const metadata: Metadata = {
-  title: 'BTW - Nhu & Ny',
+  title: 'BTW - Quỳnh Như & Bình Minh',
   description: 'Chuc mung hanh phuc Nhu nhe!'
 };
 
