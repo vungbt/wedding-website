@@ -33,7 +33,7 @@ export function AudioPlayer({ className }: AudioPlayerProps) {
   };
 
   return (
-    <div className={clsx(className, 'fixed z-50 bottom-5 right-5')}>
+    <div className={clsx(className, 'fixed z-50 bottom-5 right-10')}>
       <div className="flex items-center flex-col gap-2">
         {/* Player */}
         <span className="relative">

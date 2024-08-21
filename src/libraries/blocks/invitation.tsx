@@ -7,8 +7,14 @@ export function Invitation() {
     <section
       id="invitation"
       className="invitation parallax-background bg-color-overlay pt-20 !pb-0"
+      data-aos="fade-up" // Animation for the section
+      data-aos-duration="1000" // Duration of the animation
     >
-      <div className="w-full flex items-center justify-center flex-col">
+      <div
+        className="w-full flex items-center justify-center flex-col"
+        data-aos="fade-down" // Animation for the label block
+        data-aos-duration="1000"
+      >
         <LabelBlock
           label="Lời mời"
           subLabel="Invitation"
@@ -19,16 +25,32 @@ export function Invitation() {
       </div>
 
       {/* info */}
-      <div className="invite-info w-full py-10 px-8 pt-20 text-center bg-primary-50 mt-8">
-        <h2 className="text-[38px] md:text-6xl font-secondary mb-7 leading-[1.2] text-black">
+      <div
+        className="invite-info w-full py-10 px-8 pt-20 text-center bg-primary-50 mt-8"
+        data-aos="fade-up" // Animation for the invite info
+        data-aos-duration="1000"
+      >
+        <h2
+          className="text-[38px] md:text-6xl font-secondary mb-7 leading-[1.2] text-black"
+          data-aos="fade-up" // Animation for the heading
+          data-aos-duration="1000"
+        >
           Quynh Nhu <span className="text-2xl">&</span> Binh Minh
         </h2>
-        <p className="uppercase font-medium text-black">
+        <p
+          className="uppercase font-medium text-black"
+          data-aos="fade-up" // Animation for the paragraph
+          data-aos-duration="1000"
+        >
           Sự hiện diện của bạn là niềm vinh dự của gia đình chúng tôi
         </p>
 
         {/* date */}
-        <div className="my-5">
+        <div
+          className="my-5"
+          data-aos="fade-up" // Animation for the date section
+          data-aos-duration="1000"
+        >
           <div className="flex justify-center items-center w-full mb-4">
             <RenderIcon name="line-two" className="!w-full h-[19px] text-gray-100" />
           </div>

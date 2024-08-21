@@ -32,7 +32,7 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     pauseOnHover: true
   };
 

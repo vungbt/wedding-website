@@ -5,8 +5,17 @@ import { LabelBlock } from '../common/label-block';
 
 export function Location() {
   return (
-    <section id="location" className="location py-20">
-      <div className="container flex items-center justify-center flex-col mb-16">
+    <section
+      id="location"
+      className="location py-20"
+      data-aos="fade-up" // Animation for the section
+      data-aos-duration="1000" // Duration of the animation
+    >
+      <div
+        className="container flex items-center justify-center flex-col mb-16"
+        data-aos="fade-down" // Animation for the label and line
+        data-aos-duration="1000"
+      >
         <LabelBlock
           label="Địa chỉ"
           subLabel="Location"
@@ -16,7 +25,7 @@ export function Location() {
         <RenderIcon name="line" className="!w-[189px] !h-6 text-secondary mt-4" />
       </div>
 
-      <div className="container">
+      <div className="container" data-aos="fade-up" data-aos-duration="1000">
         {/* map info */}
         <div className="map-info-container">
           {/* map iframe */}
@@ -29,10 +38,12 @@ export function Location() {
             // allowFullScreen=""
             loading="eager"
             referrerPolicy="no-referrer-when-downgrade"
+            data-aos="zoom-in" // Animation for the map iframe
+            data-aos-duration="1000"
           ></iframe>
 
           {/* info */}
-          <div className="info-wrapper">
+          <div className="info-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <div className="location-info">
               <div className="neela-style text-black">
                 <span className="h-lines"></span>
@@ -73,7 +84,11 @@ export function Location() {
         </div>
 
         {/* button */}
-        <div className="flex items-center justify-center relative z-[1] ">
+        <div
+          className="flex items-center justify-center relative z-[1] "
+          data-aos="fade-up" // Animation for the button
+          data-aos-duration="1000"
+        >
           <ButtonLink href="#rsvp" label="RSVP" />
         </div>
       </div>

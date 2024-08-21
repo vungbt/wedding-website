@@ -90,7 +90,10 @@ export function Groomsmen({ className }: GroomsmenProps) {
       <Slider {...settings} className="slider-brides" lazyLoad="progressive">
         {data.map((item, index) => (
           <div key={index}>
-            <div className="bridesmaids-item flex flex-col items-center justify-center">
+            <div
+              className="bridesmaids-item flex flex-col items-center justify-center"
+              data-aos="flip-right"
+            >
               <img src={item.src} alt="bridesmaids" loading="lazy" className="outline-none" />
               <div className="info">
                 <p className="text-lg uppercase font-medium">{item.name}</p>

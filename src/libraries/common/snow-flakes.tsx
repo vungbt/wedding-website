@@ -1,8 +1,19 @@
 'use client';
 import Script from 'next/script';
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 export function SnowFlakes() {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Duration of the animation
+      easing: 'ease-in-out', // Easing function
+      once: true // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <Script
       src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"

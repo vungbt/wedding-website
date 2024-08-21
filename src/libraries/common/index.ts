@@ -4,3 +4,4 @@ export * from './sidebar-button';
 export * from './label-block';
 export * from './audio-player';
 export * from './snow-flakes';
+export * from './modal-wrap';
