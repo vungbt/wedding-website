@@ -2,6 +2,8 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.scss';
 import { MainLayout } from '@/libraries/layouts';
+import Script from 'next/script';
+import { SnowFlakes } from '@/libraries/common';
 
 export const metadata: Metadata = {
   title: 'BTW - Quỳnh Như & Bình Minh',
@@ -26,6 +28,7 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning>
         <MainLayout>{children}</MainLayout>
+        <SnowFlakes />
       </body>
     </html>
   );

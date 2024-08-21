@@ -32,7 +32,7 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     pauseOnHover: true
   };
 
@@ -81,14 +81,25 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
       </div>
 
       {/* block */}
-      <div className="max-w-[470px] bottom-7 left-7 absolute">
+      <div className="w-[87%] md:max-w-[470px] bottom-7 left-7 absolute">
         <Slider {...settings}>
           {blocks.map((item, index) => (
             <div key={index}>
               <div className="flex flex-col min-h-[260px] justify-around bg-white p-7 pt-12">
-                <LabelBlock label="Dòng cảm xúc" subLabel="dream wedding" />
-                <p className="font-tertiary text-sub text-lg font-medium">{item}</p>
-                <ButtonLink href="#rsvp" label="Cùng chung vui" className="w-fit mt-4" />
+                <LabelBlock
+                  label="Dòng cảm xúc"
+                  subLabel="dream wedding"
+                  classLabel="text-center md:text-start"
+                  classSubLabel="w-full text-center md:w-auto"
+                />
+                <p className="font-tertiary text-sub text-lg font-medium text-center md:text-start">
+                  {item}
+                </p>
+                <ButtonLink
+                  href="#rsvp"
+                  label="Cùng chung vui"
+                  className="w-fit mt-4 mx-auto md:mx-[initial]"
+                />
               </div>
             </div>
           ))}

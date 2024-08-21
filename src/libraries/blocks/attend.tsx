@@ -68,9 +68,9 @@ export function Attend({}: AttendProps) {
   return (
     <section id="rsvp" className="py-20 px-7 bg-primary">
       <LabelBlock label="Liên hệ" subLabel="location" />
-      <div className="flex mt-6 gap-3">
+      <div className="flex flex-col md:flex-row mt-6 gap-3">
         {/* contact */}
-        <div className="flex flex-col gap-6 w-1/2">
+        <div className="flex flex-col gap-6 w-full md:w-1/2">
           <p className="text-sub">
             Mọi thắc mắc hãy liên hệ ngay với chúng tôi. <br />
             Sự hiện diện của bạn là niềm vinh dự của 2 bên gia đình chúng tôi.
@@ -95,7 +95,7 @@ export function Attend({}: AttendProps) {
           </div>
         </div>
         {/* form */}
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <h4 className="text-2xl uppercase">Bạn sẽ tham dự?</h4>
           <form onSubmit={handleSubmit(onSubmit)} className="mt-6">
             {/* input */}

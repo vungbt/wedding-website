@@ -5,10 +5,10 @@ import { RenderIcon } from '../icons';
 
 export default function Footer() {
   return (
-    <div className="w-full bg-black py-24 px-14 flex">
+    <div className="w-full bg-black py-24 px-14 flex flex-col items-center md:items-start justify-center gap-2 md:flex-row">
       {/* block 1 */}
-      <div className="w-1/3 flex flex-col items-start gap-5">
-        <Logo className="text-white items-start" />
+      <div className="w-full md:w-1/3 flex flex-col items-center md:items-start justify-center gap-5">
+        <Logo className="text-white !items-center md:!items-start" />
         {/* social */}
         <div className="flex items-center gap-3 mb-4">
           <Link
@@ -33,25 +33,31 @@ export default function Footer() {
       </div>
 
       {/* block 2 */}
-      <div className="w-1/3 flex flex-col items-start gap-5">
+      <div className="w-full md:w-1/3 flex flex-col items-center md:items-start justify-center gap-5">
         {/* SDT */}
-        <div className="flex items-start flex-col gap-2">
+        <div className="flex items-center md:items-start flex-col gap-2">
           <span className="text-black uppercase text-secondary">Số điện thoại</span>
-          <span className="text-sub">+84383007243</span>
+          <Link href="tel:+18475555555" className="text-sub text-center md:text-start">
+            +84383007243
+          </Link>
         </div>
         {/* Địa chỉ */}
-        <div className="flex items-start flex-col gap-2">
+        <div className="flex items-center md:items-start flex-col gap-2">
           <span className="text-black uppercase text-secondary">Địa chỉ</span>
-          <span className="text-sub">Xóm 10, Giao Hà, Giao Thuỷ, Nam Định</span>
+          <span className="text-sub text-center md:text-start">
+            Xóm 10, Giao Hà, Giao Thuỷ, Nam Định
+          </span>
         </div>
       </div>
 
       {/* block 3 */}
-      <div className="w-1/3 flex flex-col items-start gap-5">
+      <div className="w-full md:w-1/3 flex flex-col items-center md:items-start justify-center gap-5">
         {/* Email */}
-        <div className="flex items-start flex-col gap-2">
+        <div className="flex items-center md:items-start flex-col gap-2">
           <span className="text-black uppercase text-secondary">Email</span>
-          <span className="text-sub">info@pweddings.com</span>
+          <Link href="mailto:someone@example.com" className="text-sub text-center md:text-start">
+            info@pweddings.com
+          </Link>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export function Invitation() {
       </div>
 
       {/* info */}
-      <div className="invite-info w-full py-10 px-8 text-center bg-primary-50 mt-8">
+      <div className="invite-info w-full py-10 px-8 pt-20 text-center bg-primary-50 mt-8">
         <h2 className="text-[38px] md:text-6xl font-secondary mb-7 leading-[1.2] text-black">
           Quynh Nhu <span className="text-2xl">&</span> Binh Minh
         </h2>

@@ -1,14 +1,14 @@
 import clsx from 'clsx';
-import React from 'react';
-import Logo from '../logo';
 import Link from 'next/link';
-import { Icons, RenderIcon } from '../icons';
+import { RenderIcon } from '../icons';
+import Logo from '../logo';
 
 type SideBarProps = {
   className?: string;
+  closeMenu?: (value: boolean) => void;
 };
 
-export default function SideBar({ className }: SideBarProps) {
+export default function SideBar({ className, closeMenu }: SideBarProps) {
   const menus = [
     { title: 'Trang chủ', href: '#welcome' },
     { title: 'Câu chuyện tình yêu', href: '#our-love-story' },
@@ -32,6 +32,7 @@ export default function SideBar({ className }: SideBarProps) {
             href={item.href}
             key={index}
             className="nav-item text-center text-sm font-normal my-2 uppercase w-fit"
+            onClick={() => closeMenu && closeMenu(false)}
           >
             {item.title}
           </Link>

@@ -2,7 +2,7 @@
 const nextBuildId = require('next-build-id');
 
 const nextConfig = {
-  output: 'standalone',
+  // output: 'standalone',
   swcMinify: true,
   generateBuildId: () => nextBuildId({ dir: __dirname }),
   images: {

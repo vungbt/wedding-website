@@ -1,17 +1,20 @@
 import { CSSProperties, FC } from 'react';
-import Loading from './loading';
-import Facebook from './facebook';
-import Instagram from './instagram';
-import Logo from './logo';
 import Bars from './bars';
-import Close from './close';
+import Cheers from './cheers';
 import ChevronLeft from './chevron-left';
 import ChevronRight from './chevron-right';
-import Tiktok from './tiktok';
+import Church from './church';
+import Close from './close';
+import Facebook from './facebook';
+import Instagram from './instagram';
 import Line from './line';
 import LineTwo from './line-two';
-import Cheers from './cheers';
-import Church from './church';
+import Loading from './loading';
+import Logo from './logo';
+import Tiktok from './tiktok';
+import Volume from './volume';
+import VolumeMute from './volume-mute';
+import Random from './random';
 export type IconProps = {
   className?: string;
   style?: CSSProperties;
@@ -34,7 +37,10 @@ export type IconName =
   | 'line'
   | 'line-two'
   | 'cheers'
-  | 'church';
+  | 'church'
+  | 'volume'
+  | 'volume-mute'
+  | 'random';
 export type IconsType = Record<IconName, Icon>;
 
 export const Icons: IconsType = {
@@ -76,6 +82,15 @@ export const Icons: IconsType = {
   },
   church: (props: IconProps) => {
     return <Church {...props} />;
+  },
+  volume: (props: IconProps) => {
+    return <Volume {...props} />;
+  },
+  'volume-mute': (props: IconProps) => {
+    return <VolumeMute {...props} />;
+  },
+  random: (props: IconProps) => {
+    return <Random {...props} />;
   }
 };
 

@@ -19,7 +19,7 @@ export function WeddingGallery() {
   return (
     <section id="wedding-gallery" className="bg-primary py-20 px-7">
       <LabelBlock label="Bộ ảnh cưới" subLabel="new works" className="mb-7" />
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-2 overflow-x-auto w-full gap-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-2 overflow-x-auto w-full gap-1">
         {images.map((item, index) => (
           <span key={index} className="image-gallery relative aspect-1">
             <Image src={item} fill alt="image" loading="lazy" />

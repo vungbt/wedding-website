@@ -70,8 +70,8 @@ export function Testimonials() {
   };
   return (
     <section id="testimonials" className="testiominal py-20">
-      <div className="px-7 flex items-center relative z-10 gap-2">
-        <div className="w-2/5">
+      <div className="px-7 flex flex-col md:flex-row items-center relative z-10 gap-2">
+        <div className="w-full md:w-2/5">
           <LabelBlock
             label="Lời chúc"
             classLabel="text-white"
@@ -98,7 +98,7 @@ export function Testimonials() {
         </div>
 
         {/* message */}
-        <div className="w-3/5 bg-white p-7">
+        <div className="w-full md:w-3/5 bg-white p-7">
           <Slider {...settings} ref={slider}>
             {messages.map((item, index) => (
               <div key={index}>
