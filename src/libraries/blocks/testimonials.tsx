@@ -2,14 +2,17 @@
 import { randomAvatar } from '@/utils/common';
 import { getTimeLeft } from '@/utils/formatter';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import { ButtonLink } from '../common';
 import { LabelBlock } from '../common/label-block';
 import { RenderIcon } from '../icons';
+import useMessages from '@/hooks/messages/useMessages';
 
 export function Testimonials() {
   const slider = React.useRef(null);
+  const { messages, getMessages } = useMessages();
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -19,44 +22,9 @@ export function Testimonials() {
     pauseOnHover: true
   };
 
-  const messages = [
-    {
-      content:
-        'I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!',
-      author: 'Oliva',
-      createdAt: new Date()
-    },
-    {
-      content:
-        'I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!',
-      author: 'Oliva',
-      createdAt: new Date()
-    },
-    {
-      content:
-        'I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!',
-      author: 'Oliva',
-      createdAt: new Date()
-    },
-    {
-      content:
-        'I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!',
-      author: 'Oliva',
-      createdAt: new Date()
-    },
-    {
-      content:
-        'I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!',
-      author: 'Oliva',
-      createdAt: new Date()
-    },
-    {
-      content:
-        'I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!',
-      author: 'Oliva',
-      createdAt: new Date()
-    }
-  ];
+  useEffect(() => {
+    getMessages();
+  }, []);
 
   const onHandleSlider = (type: 'prev' | 'next') => {
     if (!slider || !slider.current) return;
