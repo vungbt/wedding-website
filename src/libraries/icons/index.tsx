@@ -15,6 +15,7 @@ import Tiktok from './tiktok';
 import Volume from './volume';
 import VolumeMute from './volume-mute';
 import Random from './random';
+import ViewFinder from './viewfinder';
 export type IconProps = {
   className?: string;
   style?: CSSProperties;
@@ -40,7 +41,8 @@ export type IconName =
   | 'church'
   | 'volume'
   | 'volume-mute'
-  | 'random';
+  | 'random'
+  | 'view-finder';
 export type IconsType = Record<IconName, Icon>;
 
 export const Icons: IconsType = {
@@ -91,6 +93,9 @@ export const Icons: IconsType = {
   },
   random: (props: IconProps) => {
     return <Random {...props} />;
+  },
+  'view-finder': (props: IconProps) => {
+    return <ViewFinder {...props} />;
   }
 };
 
