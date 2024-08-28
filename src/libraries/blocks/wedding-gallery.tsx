@@ -1,9 +1,9 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import { ModalWrap, SliderBuilder } from '../common';
 import { LabelBlock } from '../common/label-block';
-import { ModalWrap } from '../common';
-import Slider from 'react-slick';
+import { useState } from 'react';
+import { RenderIcon } from '../icons';
 
 export function WeddingGallery() {
   const images = [
@@ -20,14 +20,12 @@ export function WeddingGallery() {
     '/wedding-gallery/11.jpg',
     '/wedding-gallery/12.jpg'
   ];
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [initialSlider, setInitialSlider] = useState<number>(1);
 
-  const settings = {
-    infinite: true,
-    speed: 500,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    pauseOnHover: true
+  const onViewImage = (index: number) => {
+    setInitialSlider(index + 1);
+    setIsOpen(true);
   };
 
   return (
@@ -52,18 +50,22 @@ export function WeddingGallery() {
         {images.map((item, index) => (
           <span
             key={index}
-            className="image-gallery relative aspect-1"
+            className="image-gallery relative aspect-1 cursor-pointer"
             data-aos="zoom-in" // Animation for each image
             data-aos-duration="1000"
+            onClick={() => onViewImage(index)}
           >
             <Image src={item} fill alt="image" loading="lazy" />
+            <span className="view-finder">
+              <RenderIcon name="view-finder" className="text-white" />
+            </span>
           </span>
         ))}
       </div>
 
       {/* modal */}
-      <ModalWrap isOpen={true}>
-        <img src={images[0]} alt="image" loading="lazy" className="w-full aspect-4/3" />
+      <ModalWrap isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <SliderBuilder initialIndex={initialSlider} data={images} />
       </ModalWrap>
     </section>
   );

@@ -11,7 +11,12 @@ type ModalWrapProps = {
 };
 export function ModalWrap({ isOpen, children, onClose, className }: ModalWrapProps) {
   return (
-    <Modal isOpen={isOpen} onRequestClose={onClose} className={clsx(className, 'modal-custom')}>
+    <Modal
+      style={{ overlay: { zIndex: 99 } }}
+      isOpen={isOpen}
+      onRequestClose={onClose}
+      className={clsx(className, 'modal-custom')}
+    >
       {children}
     </Modal>
   );
