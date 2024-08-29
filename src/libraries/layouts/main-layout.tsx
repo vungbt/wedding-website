@@ -20,11 +20,10 @@ export function MainLayout({ children }: MainLayoutProps) {
     <main className="w-full overflow-hidden relative">
       <SideBar
         className={clsx(
-          'py-14 px-7 fixed bottom-0 top-0 left-0 overflow-y-hidden bg-white transition-all ease-linear shadow-box',
+          'py-14 px-7 fixed bottom-0 top-0 left-0 z-[100] overflow-y-hidden bg-white transition-all ease shadow-box w-[270px] lg:w-[23%]',
           {
-            'w-1/3 lg:w-[23%]': lg,
-            'w-[270px] translate-x-[-270px]': !lg,
-            '!translate-x-0': open && !lg
+            'translate-x-[-270px] lg:translate-x-0 transition-all ease': !open,
+            '!translate-x-0 transition-all ease': open
           }
         )}
         closeMenu={setOpen}
@@ -40,11 +39,13 @@ export function MainLayout({ children }: MainLayoutProps) {
 
       {/* main content */}
       <div
-        className={clsx('float-right transition-all ease-linear overflow-y-auto relative', {
-          'w-2/3 lg:w-[77%]': lg,
-          'w-full translate-x-0': !lg,
-          '!translate-x-[270px]': open && !lg
-        })}
+        className={clsx(
+          'float-right transition-all ease overflow-y-auto relative w-full lg:w-[77%]',
+          {
+            'translate-x-0 lg:translate-x-0 transition-all ease': !open,
+            '!translate-x-[270px] transition-all ease': open
+          }
+        )}
       >
         {/* overlay */}
         <div

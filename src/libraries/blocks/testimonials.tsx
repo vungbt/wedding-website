@@ -1,4 +1,5 @@
 'use client';
+import useMessages from '@/hooks/messages/useMessages';
 import { randomAvatar } from '@/utils/common';
 import { getTimeLeft } from '@/utils/formatter';
 import Image from 'next/image';
@@ -7,7 +8,6 @@ import Slider from 'react-slick';
 import { ButtonLink } from '../common';
 import { LabelBlock } from '../common/label-block';
 import { RenderIcon } from '../icons';
-import useMessages from '@/hooks/messages/useMessages';
 
 export function Testimonials() {
   const slider = React.useRef(null);
@@ -24,6 +24,7 @@ export function Testimonials() {
 
   useEffect(() => {
     getMessages();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onHandleSlider = (type: 'prev' | 'next') => {

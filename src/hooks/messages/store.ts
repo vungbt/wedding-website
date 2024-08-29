@@ -5,7 +5,7 @@ interface MessagesState {
   messages: MessageItem[];
   loading: boolean;
   setMessages: (
-    apiClient: (body: MessageItem) => Promise<{ data: MessageItem[] }>,
+    apiClient: (body: MessageItem) => Promise<MessageItem | null>,
     body: MessageItem
   ) => void;
   clear: () => void;
@@ -22,7 +22,12 @@ export const useMessagesStore = create<MessagesState>((set, get) => ({
     const res = await apiClient(body);
     set({ loading: false });
     if (res) {
-      set({ messages: res?.data ?? [] });
+      const states = get();
+      const newMessages = states?.messages ?? [];
+      if (res) {
+        newMessages.push(res);
+      }
+      set({ messages: newMessages });
     }
     return res;
   },

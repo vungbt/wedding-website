@@ -2,8 +2,8 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.scss';
 import { MainLayout } from '@/libraries/layouts';
-import Script from 'next/script';
 import { SnowFlakes } from '@/libraries/common';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: 'BTW - Quỳnh Như & Bình Minh',
@@ -29,6 +29,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <MainLayout>{children}</MainLayout>
         <SnowFlakes />
+        <Toaster />
       </body>
     </html>
   );
