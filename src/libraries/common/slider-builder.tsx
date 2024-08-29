@@ -64,7 +64,6 @@ function BtnSlider({
   direction: 'next' | 'prev';
   moveSlide: () => void;
 }) {
-  console.log(direction, moveSlide);
   return (
     <button
       onClick={moveSlide}

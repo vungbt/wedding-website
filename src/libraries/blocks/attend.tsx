@@ -7,8 +7,9 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { Button } from '../common';
+import useMessages from '@/hooks/messages/useMessages';
 
-type Inputs = {
+export type AttendInputs = {
   name: string;
   isAttend: boolean;
   guests?: number;
@@ -20,6 +21,7 @@ type AttendProps = {
 };
 
 export function Attend({}: AttendProps) {
+  const { setMessages } = useMessages();
   const schema = yup
     .object({
       name: yup.string().trim().required('Vui lòng cho chúng tôi biết tên của bạn.'),
@@ -33,13 +35,12 @@ export function Attend({}: AttendProps) {
     handleSubmit,
     watch,
     formState: { errors }
-  } = useForm<Inputs>({
+  } = useForm<AttendInputs>({
     resolver: yupResolver(schema)
   });
   const isAttend = watch('isAttend');
   const [isBride, setIsBride] = useState<boolean | undefined>(true);
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   const renderQR = useMemo(() => {
     if (isBride === undefined) return null;
     if (isBride)
@@ -64,6 +65,10 @@ export function Attend({}: AttendProps) {
       />
     );
   }, [isBride]);
+
+  const onSubmit: SubmitHandler<AttendInputs> = (data) => {
+    setMessages(data);
+  };
 
   return (
     <section id="rsvp" className="py-20 px-7 bg-primary">
