@@ -34,9 +34,13 @@ export function Attend({}: AttendProps) {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors }
   } = useForm<AttendInputs>({
-    resolver: yupResolver(schema)
+    resolver: yupResolver(schema),
+    defaultValues: {
+      isAttend: true
+    }
   });
   const isAttend = watch('isAttend');
   const [isBride, setIsBride] = useState<boolean | undefined>(true);
@@ -66,8 +70,11 @@ export function Attend({}: AttendProps) {
     );
   }, [isBride]);
 
-  const onSubmit: SubmitHandler<AttendInputs> = (data) => {
-    setMessages(data);
+  const onSubmit: SubmitHandler<AttendInputs> = async (data) => {
+    const res = await setMessages(data);
+    if (Object.keys(res as any).length > 0) {
+      reset();
+    }
   };
 
   return (
@@ -121,7 +128,14 @@ export function Attend({}: AttendProps) {
             {/* is attend */}
             <div className="flex flex-col justify-start items-start mt-5">
               <div className="flex items-start gap-2">
-                <input hidden type="radio" id="attendY" {...register('isAttend')} value={1} />
+                <input
+                  defaultChecked={isAttend}
+                  hidden
+                  type="radio"
+                  id="attendY"
+                  {...register('isAttend')}
+                  value={1}
+                />
                 <label htmlFor="attendY" className="radio-custom mt-[6px]"></label>
                 <label htmlFor="attendY" className="text-secondary">
                   Có, tôi sẽ tham gia

@@ -1,7 +1,6 @@
 import { AttendInputs } from '@/libraries/blocks';
 import { apiAddNewMessage, apiGetMessages } from '@/utils/apis/messages';
 import { useMessagesStore } from './store';
-import toast from 'react-hot-toast';
 import { toastSuccess } from '@/configs';
 
 export default function useMessages() {
@@ -25,7 +24,7 @@ export default function useMessages() {
     });
     if (Object.keys(res as any).length > 0 && res !== null) {
       toastSuccess(
-        '"Chân thành cảm ơn bạn đã gửi những lời chúc tốt đẹp nhất đến chúng con. Sự quan tâm và tình cảm quý báu của mọi người là niềm động viên lớn cho chúng con trong hành trình mới này.'
+        '"Chân thành cảm ơn bạn đã gửi những lời chúc tốt đẹp nhất đến chúng tôi. Sự quan tâm và tình cảm quý báu của bạn là niềm động viên lớn cho chúng tôi trong hành trình mới này.'
       );
     }
     return res;

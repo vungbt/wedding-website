@@ -38,20 +38,12 @@ export function MainLayout({ children }: MainLayoutProps) {
       />
 
       {/* main content */}
-      <div
-        className={clsx(
-          'float-right transition-all ease overflow-y-auto relative w-full lg:w-[77%]',
-          {
-            'translate-x-0 lg:translate-x-0 transition-all ease': !open,
-            '!translate-x-[270px] transition-all ease': open
-          }
-        )}
-      >
+      <div className={'float-right transition-all ease overflow-y-auto relative w-full lg:w-[77%]'}>
         {/* overlay */}
         <div
           onClick={() => setOpen(false)}
           className={clsx(
-            'absolute top-0 right-0 left-0 bottom-0 bg-transparent w-full h-full z-[11] transition-all ease-linear',
+            'sidebar-overlay absolute top-0 right-0 left-0 bottom-0 bg-transparent w-full h-full z-[11] transition-all ease-linear',
             {
               hidden: !open
             }
