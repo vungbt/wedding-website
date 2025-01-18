@@ -14,8 +14,8 @@ export default function SideBar({ className, closeMenu }: SideBarProps) {
     { title: 'Câu chuyện tình yêu', href: '#our-love-story' },
     { title: 'Lời mời', href: '#invitation' },
     { title: 'Địa điểm', href: '#location' },
-    { title: 'Phù dâu', href: '#bridesmaids' },
-    { title: 'Phù rể', href: '#groomsmen' },
+    { title: 'Nhà trai', href: '#bridesmaids' },
+    { title: 'Nhà gái', href: '#groomsmen' },
     { title: 'Bộ ảnh cưới', href: '#wedding-gallery' },
     { title: 'Lời chúc', href: '#testimonials' },
     { title: 'RSVP', href: '#rsvp' }

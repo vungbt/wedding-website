@@ -18,7 +18,11 @@ export function WeddingGallery() {
     '/wedding-gallery/09.jpg',
     '/wedding-gallery/10.jpg',
     '/wedding-gallery/11.jpg',
-    '/wedding-gallery/12.jpg'
+    '/wedding-gallery/12.jpg',
+    '/wedding-gallery/13.jpg',
+    '/wedding-gallery/14.jpg',
+    '/wedding-gallery/15.jpg',
+    '/wedding-gallery/16.jpg'
   ];
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [initialSlider, setInitialSlider] = useState<number>(1);
@@ -55,7 +59,7 @@ export function WeddingGallery() {
             data-aos-duration="1000"
             onClick={() => onViewImage(index)}
           >
-            <Image src={item} fill alt="image" loading="lazy" />
+            <Image src={item} fill alt="image" loading="lazy" className="object-cover" />
             <span className="view-finder">
               <RenderIcon name="view-finder" className="text-white" />
             </span>
@@ -64,7 +68,7 @@ export function WeddingGallery() {
       </div>
 
       {/* modal */}
-      <ModalWrap isOpen={isOpen} onClose={() => setIsOpen(false)}>
+      <ModalWrap className="!w-fit" isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <SliderBuilder initialIndex={initialSlider} data={images} />
       </ModalWrap>
     </section>

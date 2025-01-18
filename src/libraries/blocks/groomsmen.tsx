@@ -84,7 +84,7 @@ export function Groomsmen({ className }: GroomsmenProps) {
   ];
   return (
     <section id="groomsmen" className={clsx(className, 'px-7 pr-0 py-20')}>
-      <LabelBlock label="Phù rể" subLabel="Groomsmen" className="mb-7" />
+      <LabelBlock label="Nhà gái" subLabel="Groomsmen" className="mb-7" />
 
       {/* slider */}
       <Slider {...settings} className="slider-brides" lazyLoad="progressive">

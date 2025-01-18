@@ -1,23 +1,36 @@
 'use client';
 import clsx from 'clsx';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Slider from 'react-slick';
 import { ButtonLink } from '../common';
 import { LabelBlock } from '../common/label-block';
+import useScreen from '@/hooks/useScreen';
 
 type WelcomeBlockProps = {
   className?: string;
 };
 
 export function WelcomeBlock({}: WelcomeBlockProps) {
-  const data = [
-    '/welcome/welcome_1.jpg',
-    '/welcome/welcome_2.jpg',
-    '/welcome/welcome_3.jpg',
-    '/welcome/welcome_4.jpg',
-    '/welcome/welcome_5.jpg'
-  ];
+  const { isMobile, sizes } = useScreen();
+  console.log('sizes==>', sizes);
+  const data = useMemo(() => {
+    if (sizes.lg)
+      return [
+        '/welcome/welcome_1.jpg',
+        '/welcome/welcome_2.jpg',
+        '/welcome/welcome_3.jpg',
+        '/welcome/welcome_4.jpg',
+        '/welcome/welcome_5.jpg'
+      ];
+    return [
+      '/welcome/mobile/welcome_1.jpg',
+      '/welcome/mobile/welcome_2.jpg',
+      '/welcome/mobile/welcome_3.jpg',
+      '/welcome/mobile/welcome_4.jpg',
+      '/welcome/mobile/welcome_5.jpg'
+    ];
+  }, [isMobile]);
 
   const blocks = [
     'Chúng tôi đã tìm thấy nhau và cùng nhau xây dựng một câu chuyện tình yêu đẹp như mơ. Hãy cùng chúng tôi kỷ niệm ngày đặc biệt này và chứng kiến giấc mơ của chúng tôi trở thành hiện thực.',

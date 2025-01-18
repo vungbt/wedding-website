@@ -84,7 +84,7 @@ export function Bridesmaids({ className }: BridesmaidsProps) {
   ];
   return (
     <section id="bridesmaids" className={clsx(className, 'px-7 pr-0 py-20 bg-primary')}>
-      <LabelBlock label="Phù dâu" subLabel="Bridesmaids" className="mb-7" />
+      <LabelBlock label="Nhà trai" subLabel="Bridesmaids" className="mb-7" />
 
       {/* slider */}
       <Slider {...settings} className="slider-brides" lazyLoad="progressive">

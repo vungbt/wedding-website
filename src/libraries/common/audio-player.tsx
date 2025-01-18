@@ -9,7 +9,7 @@ type AudioPlayerProps = {
 };
 
 export function AudioPlayer({ className }: AudioPlayerProps) {
-  const [audio, setAudio] = useState(1);
+  const [audio, setAudio] = useState(getRandomNumber(7));
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -24,7 +24,7 @@ export function AudioPlayer({ className }: AudioPlayerProps) {
   };
 
   const playRandomAudio = () => {
-    setAudio(getRandomNumber(5));
+    setAudio(getRandomNumber(7));
     if (audioRef.current) {
       audioRef.current.load();
       audioRef.current.play();
@@ -58,7 +58,7 @@ export function AudioPlayer({ className }: AudioPlayerProps) {
       </div>
 
       <audio ref={audioRef} controls loop hidden>
-        <source src={`/audio/${audio ?? getRandomNumber(5)}.mp3`} type="audio/mpeg" />
+        <source src={`/audio/${audio ?? getRandomNumber(7)}.mp3`} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </div>

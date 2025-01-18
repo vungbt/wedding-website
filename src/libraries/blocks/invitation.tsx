@@ -35,7 +35,7 @@ export function Invitation() {
           data-aos="fade-up" // Animation for the heading
           data-aos-duration="1000"
         >
-          Quynh Nhu <span className="text-2xl">&</span> Binh Minh
+          Thanh Vung <span className="text-2xl">&</span> Hoang Dieu
         </h2>
         <p
           className="uppercase font-medium text-black"
@@ -54,12 +54,12 @@ export function Invitation() {
           <div className="flex justify-center items-center w-full mb-4">
             <RenderIcon name="line-two" className="!w-full h-[19px] text-gray-100" />
           </div>
-          <p className="text-[20pt] font-medium">Ngày 24 tháng 10, 2024</p>
-          <p className="text-[18pt] font-medium">vào lúc 03:00 pm</p>
+          <p className="text-[20pt] font-medium">Ngày 07 tháng 02, 2025</p>
+          <p className="text-[18pt] font-medium">vào lúc 10h:30 am</p>
           <div className="flex justify-center items-center w-full mt-5">
             <RenderIcon name="line-two" className="!w-full h-[19px] text-gray-100 scale-y-[-1]" />
           </div>
-          <p className="mt-4 uppercase">Tại Xóm 9</p>
+          <p className="mt-4 uppercase">Tại Xóm Sơn Hà</p>
           <p className="uppercase">Xã Giao Hà, Huyện Giao Thuỷ, Tỉnh Nam Định</p>
           <p className="mt-3 font-secondary font-medium text-[16pt]">Reception to follow</p>
         </div>

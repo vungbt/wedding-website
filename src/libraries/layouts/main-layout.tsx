@@ -38,7 +38,11 @@ export function MainLayout({ children }: MainLayoutProps) {
       />
 
       {/* main content */}
-      <div className={'float-right transition-all ease overflow-y-auto relative w-full lg:w-[77%]'}>
+      <div
+        className={
+          'float-right transition-all ease overflow-y-auto relative w-full lg:w-[77%] overflow-x-hidden'
+        }
+      >
         {/* overlay */}
         <div
           onClick={() => setOpen(false)}

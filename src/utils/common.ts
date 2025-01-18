@@ -5,3 +5,7 @@ export const getRandomNumber = (range: number) => {
 export const randomAvatar = () => {
   return `/avatars/${getRandomNumber(10)}.jpg`;
 };
+
+export const getImageById = (id: string) => {
+  return `/image/NLV_000${id}`;
+};

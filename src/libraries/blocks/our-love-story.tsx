@@ -9,7 +9,7 @@ export function OurLoveStory() {
         data-aos="fade-right" // Add AOS data attribute for animation
         data-aos-duration="1000"
       >
-        <h1 className="text-2xl uppercase">Quỳnh Như & Bình Minh</h1>
+        <h1 className="text-2xl uppercase">Thanh Vững & Hoàng Diệu</h1>
         <p className="font-tertiary text-secondary text-[20px] italic">
           We would love to meet up and chat about how we can make your dream wedding happen!
         </p>
