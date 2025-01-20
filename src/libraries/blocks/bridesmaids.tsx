@@ -47,44 +47,44 @@ export function Bridesmaids({ className }: BridesmaidsProps) {
   const data = [
     {
       src: '/bridesmaids/01.jpg',
-      name: 'Dương Ngọc Phan',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/stableisme',
+        instagram: 'https://www.facebook.com/stableisme',
+        tiktok: 'https://www.facebook.com/stableisme'
       }
     },
     {
       src: '/bridesmaids/02.jpg',
-      name: 'Bảo Uyên',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/hoangdieu0418',
+        instagram: 'https://www.facebook.com/hoangdieu0418',
+        tiktok: 'https://www.facebook.com/hoangdieu0418'
       }
     },
     {
       src: '/bridesmaids/03.jpg',
-      name: 'Vân Anh Bùi',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/hoangdieu0418',
+        instagram: 'https://www.facebook.com/hoangdieu0418',
+        tiktok: 'https://www.facebook.com/hoangdieu0418'
       }
     },
     {
       src: '/bridesmaids/04.jpg',
-      name: 'Uyển Nhi',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/stableisme',
+        instagram: 'https://www.facebook.com/stableisme',
+        tiktok: 'https://www.facebook.com/stableisme'
       }
     }
   ];
   return (
     <section id="bridesmaids" className={clsx(className, 'px-7 pr-0 py-20 bg-primary')}>
-      <LabelBlock label="Nhà trai" subLabel="Bridesmaids" className="mb-7" />
+      <LabelBlock label="Hồi ức" subLabel="Memories" className="mb-7" />
 
       {/* slider */}
       <Slider {...settings} className="slider-brides" lazyLoad="progressive">

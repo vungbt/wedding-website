@@ -45,7 +45,7 @@ export default function SideBar({ className, closeMenu }: SideBarProps) {
         <Link href="tel:+18475555555" className="mt-3">
           +84383007243
         </Link>
-        <Link href="mailto:someone@example.com">someone@example.com</Link>
+        <Link href="mailto:vungbt1999@gmail.com">vungbt1999@gmail.com</Link>
 
         {/* social */}
         <div className="flex items-center gap-3 mb-4">

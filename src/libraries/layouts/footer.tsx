@@ -55,7 +55,7 @@ export default function Footer() {
         {/* Email */}
         <div className="flex items-center md:items-start flex-col gap-2">
           <span className="text-black uppercase text-secondary">Email</span>
-          <Link href="mailto:someone@example.com" className="text-sub text-center md:text-start">
+          <Link href="mailto:vungbt1999@gmail.com" className="text-sub text-center md:text-start">
             info@pweddings.com
           </Link>
         </div>

@@ -47,44 +47,44 @@ export function Groomsmen({ className }: GroomsmenProps) {
   const data = [
     {
       src: '/groomsmen/01.jpg',
-      name: 'Phúc Lê',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/hoangdieu0418',
+        instagram: 'https://www.facebook.com/hoangdieu0418',
+        tiktok: 'https://www.facebook.com/hoangdieu0418'
       }
     },
     {
       src: '/groomsmen/02.jpg',
-      name: 'Khánh Duy Phạm',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/hoangdieu0418',
+        instagram: 'https://www.facebook.com/hoangdieu0418',
+        tiktok: 'https://www.facebook.com/hoangdieu0418'
       }
     },
     {
       src: '/groomsmen/03.jpg',
-      name: 'Vinh Hoàng',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/hoangdieu0418',
+        instagram: 'https://www.facebook.com/hoangdieu0418',
+        tiktok: 'https://www.facebook.com/hoangdieu0418'
       }
     },
     {
       src: '/groomsmen/04.jpg',
-      name: 'Tuấn Kiệu Nguyễn',
+      name: 'Memory',
       social: {
-        facebook: '/',
-        instagram: '/',
-        tiktok: '/'
+        facebook: 'https://www.facebook.com/hoangdieu0418',
+        instagram: 'https://www.facebook.com/hoangdieu0418',
+        tiktok: 'https://www.facebook.com/hoangdieu0418'
       }
     }
   ];
   return (
     <section id="groomsmen" className={clsx(className, 'px-7 pr-0 py-20')}>
-      <LabelBlock label="Nhà gái" subLabel="Groomsmen" className="mb-7" />
+      <LabelBlock label="Hồi ức" subLabel="Memories" className="mb-7" />
 
       {/* slider */}
       <Slider {...settings} className="slider-brides" lazyLoad="progressive">
