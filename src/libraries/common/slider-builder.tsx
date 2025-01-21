@@ -43,7 +43,6 @@ export function SliderBuilder({
               width={600}
               layout="responsive"
               height={800}
-              loading="lazy"
               className="image-builder w-auto"
             />
           </div>

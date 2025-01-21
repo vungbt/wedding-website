@@ -72,7 +72,7 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
             }
           )}
         >
-          <Image fill src={item} alt="image" loading="lazy" />
+          <Image fill src={item} alt="image" priority />
         </div>
       ))}
 

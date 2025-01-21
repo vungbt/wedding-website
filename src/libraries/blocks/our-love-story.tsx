@@ -11,23 +11,23 @@ export function OurLoveStory() {
       >
         <h1 className="text-2xl uppercase">Thanh Vững & Hoàng Diệu</h1>
         <p className="font-tertiary text-secondary text-[20px] italic">
-          We would love to meet up and chat about how we can make your dream wedding happen!
+          {`"Yêu không phải là nhìn nhau, mà là cùng nhìn về một hướng."`}
         </p>
         <p className="font-tertiary text-xl text-sub">
-          Professional Wedding & Event Planner. Curabit aliquet orci elit genes tristique lorem
-          commodo vitae. Aliquam tincidunt, felis sede gravida aliquam, neque libero hendrerit
-          magna, sit amet mollis lacus quam maurisine. Aliquam erat volutpat.
+          10 năm là cả một hành trình đầy cảm xúc – nơi chúng mình cùng vượt qua mọi thử thách, cùng
+          sẻ chia niềm vui và cả những phút giây bình dị. Từ những điều giản đơn nhất, chúng mình đã
+          học cách yêu thương, thấu hiểu và cùng nhau xây dựng những ước mơ chung
         </p>
         <p className="font-tertiary text-[20px] text-sub">
-          Quality fringilla dui at elit finibus viverra nec a lacus. Qedat themo the druanye semper
-          sollicitudin mi suscipit non sagie the fermen.
+          Hôn lễ này không chỉ là lời cam kết, mà còn là bước khởi đầu cho một chặng đường mới – nơi
+          niềm tin, hạnh phúc và tình yêu sẽ ngày càng bền chặt.
         </p>
         <p className="font-tertiary text-[20px] text-sub">
-          Phasellus viverra tristique justo. Duis vitae diam neque. Vivamus ac est augue. Vestibulum
-          fringilla dui at elit finibus viverra nec a lacus. Sedat themo eros odio semper
-          sollicitudin mi suscipit non.
+          Chúng mình rất mong bạn sẽ có mặt để cùng chia sẻ niềm vui trong ngày đặc biệt này!
         </p>
-        <p className="font-tertiary text-secondary text-[20px] italic">To Know Us is to Love Us!</p>
+        <p className="font-tertiary text-secondary text-[20px] italic">
+          Một hành trình yêu thương, một khởi đầu hạnh phúc.
+        </p>
       </div>
 
       {/* image */}

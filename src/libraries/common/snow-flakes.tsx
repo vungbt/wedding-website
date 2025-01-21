@@ -3,6 +3,7 @@ import Script from 'next/script';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import '@/styles/blink.scss'; // Custom CSS for blink-blink effect
 
 export function SnowFlakes() {
   useEffect(() => {
@@ -14,20 +15,25 @@ export function SnowFlakes() {
     });
   }, []);
 
-  return (
-    <Script
-      src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"
-      strategy="afterInteractive"
-      onLoad={() => {
-        if (typeof window !== 'undefined') {
-          // Ensure script is loaded and available
-          new (window as any).Snowflakes({
-            color: '#f990e2',
-            minSize: 8,
-            maxSize: 14
-          });
-        }
-      }}
-    />
-  );
+  useEffect(() => {
+    // Create and append custom snowflakes with blinking effect
+    const container = document.createElement('div');
+    container.className = 'blink-container';
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 150; i++) {
+      const flake = document.createElement('div');
+      flake.className = 'blink-flake';
+      flake.style.left = `${Math.random() * 100}vw`;
+      flake.style.animationDelay = `${Math.random() * 10}s`;
+      container.appendChild(flake);
+    }
+
+    return () => {
+      // Clean up on unmount
+      document.body.removeChild(container);
+    };
+  }, []);
+
+  return <></>; // No script needed for this effect
 }

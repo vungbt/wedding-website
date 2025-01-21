@@ -1,0 +1,46 @@
+/* Container for the snowflakes */
+.blink-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Individual snowflakes with blink effect */
+.blink-flake {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #e8debb;
+  border-radius: 50%;
+  animation:
+    blink 2s infinite,
+    fall 10s linear infinite;
+  opacity: 0;
+}
+
+/* Blink animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

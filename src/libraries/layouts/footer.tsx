@@ -12,19 +12,22 @@ export default function Footer() {
         {/* social */}
         <div className="flex items-center gap-3 mb-4">
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.facebook.com/stableisme"
             className="border border-solid border-[#222] w-8 h-8 aspect-1 flex items-center justify-center transition-all ease-linear text-white hover:bg-secondary hover:text-black"
           >
             <RenderIcon name="facebook" className="!w-4 !h-4" />
           </Link>
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.instagram.com/hdieu1804/"
             className="border border-solid border-[#222] w-8 h-8 aspect-1 flex items-center justify-center transition-all ease-linear text-white hover:bg-secondary hover:text-black"
           >
             <RenderIcon name="instagram" className="!w-4 !h-4" />
           </Link>
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.tiktok.com/@hoangdieu1840"
             className="border border-solid border-[#222] w-8 h-8 aspect-1 flex items-center justify-center  transition-all ease-linear text-white hover:bg-secondary hover:text-black"
           >
             <RenderIcon name="tiktok" className="!w-4 !h-4" />
@@ -37,7 +40,7 @@ export default function Footer() {
         {/* SDT */}
         <div className="flex items-center md:items-start flex-col gap-2">
           <span className="text-black uppercase text-secondary">Số điện thoại</span>
-          <Link href="tel:+18475555555" className="text-sub text-center md:text-start">
+          <Link href="tel:+84383007243" className="text-sub text-center md:text-start">
             +84383007243
           </Link>
         </div>
@@ -56,7 +59,7 @@ export default function Footer() {
         <div className="flex items-center md:items-start flex-col gap-2">
           <span className="text-black uppercase text-secondary">Email</span>
           <Link href="mailto:vungbt1999@gmail.com" className="text-sub text-center md:text-start">
-            info@pweddings.com
+            vungbt1999@gmail.com
           </Link>
         </div>
       </div>

@@ -14,8 +14,8 @@ export default function SideBar({ className, closeMenu }: SideBarProps) {
     { title: 'Câu chuyện tình yêu', href: '#our-love-story' },
     { title: 'Lời mời', href: '#invitation' },
     { title: 'Địa điểm', href: '#location' },
-    { title: 'Nhà trai', href: '#bridesmaids' },
-    { title: 'Nhà gái', href: '#groomsmen' },
+    { title: 'Hồi ức', href: '#bridesmaids' },
+    { title: 'Kỷ niệm', href: '#groomsmen' },
     { title: 'Bộ ảnh cưới', href: '#wedding-gallery' },
     { title: 'Lời chúc', href: '#testimonials' },
     { title: 'RSVP', href: '#rsvp' }
@@ -42,7 +42,7 @@ export default function SideBar({ className, closeMenu }: SideBarProps) {
       {/* footer */}
       <div className="flex-1 flex items-center justify-end flex-col text-sm gap-2">
         <span className="block w-2/3 h-[1px] bg-line"></span>
-        <Link href="tel:+18475555555" className="mt-3">
+        <Link href="tel:+84383007243" className="mt-3">
           +84383007243
         </Link>
         <Link href="mailto:vungbt1999@gmail.com">vungbt1999@gmail.com</Link>
@@ -50,19 +50,22 @@ export default function SideBar({ className, closeMenu }: SideBarProps) {
         {/* social */}
         <div className="flex items-center gap-3 mb-4">
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.facebook.com/stableisme"
             className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center transition-all ease-linear hover:bg-black hover:text-white"
           >
             <RenderIcon name="facebook" className="!w-4 !h-4" />
           </Link>
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.instagram.com/hdieu1804/"
             className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center transition-all ease-linear hover:bg-black hover:text-white"
           >
             <RenderIcon name="instagram" className="!w-4 !h-4" />
           </Link>
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.tiktok.com/@hoangdieu1840"
             className="border border-solid border-line w-8 h-8 aspect-1 flex items-center justify-center  transition-all ease-linear hover:bg-black hover:text-white"
           >
             <RenderIcon name="tiktok" className="!w-4 !h-4" />

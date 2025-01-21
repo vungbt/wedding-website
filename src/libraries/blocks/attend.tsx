@@ -103,7 +103,7 @@ export function Attend({}: AttendProps) {
           <div className="flex items-center gap-2">
             <span className="text-black">Email</span>
             <span className="w-4 h-[1px] bg-sub"></span>
-            <span className="text-sub">info@pweddings.com</span>
+            <span className="text-sub">vungbt1999@gmail.com</span>
           </div>
         </div>
         {/* form */}

@@ -50,8 +50,8 @@ export function Groomsmen({ className }: GroomsmenProps) {
       name: 'Memory',
       social: {
         facebook: 'https://www.facebook.com/hoangdieu0418',
-        instagram: 'https://www.facebook.com/hoangdieu0418',
-        tiktok: 'https://www.facebook.com/hoangdieu0418'
+        instagram: 'https://www.instagram.com/hdieu1804/',
+        tiktok: 'https://www.tiktok.com/@hoangdieu1840'
       }
     },
     {
@@ -59,8 +59,8 @@ export function Groomsmen({ className }: GroomsmenProps) {
       name: 'Memory',
       social: {
         facebook: 'https://www.facebook.com/hoangdieu0418',
-        instagram: 'https://www.facebook.com/hoangdieu0418',
-        tiktok: 'https://www.facebook.com/hoangdieu0418'
+        instagram: 'https://www.instagram.com/hdieu1804/',
+        tiktok: 'https://www.tiktok.com/@hoangdieu1840'
       }
     },
     {
@@ -68,8 +68,8 @@ export function Groomsmen({ className }: GroomsmenProps) {
       name: 'Memory',
       social: {
         facebook: 'https://www.facebook.com/hoangdieu0418',
-        instagram: 'https://www.facebook.com/hoangdieu0418',
-        tiktok: 'https://www.facebook.com/hoangdieu0418'
+        instagram: 'https://www.instagram.com/hdieu1804/',
+        tiktok: 'https://www.tiktok.com/@hoangdieu1840'
       }
     },
     {
@@ -77,8 +77,8 @@ export function Groomsmen({ className }: GroomsmenProps) {
       name: 'Memory',
       social: {
         facebook: 'https://www.facebook.com/hoangdieu0418',
-        instagram: 'https://www.facebook.com/hoangdieu0418',
-        tiktok: 'https://www.facebook.com/hoangdieu0418'
+        instagram: 'https://www.instagram.com/hdieu1804/',
+        tiktok: 'https://www.tiktok.com/@hoangdieu1840'
       }
     }
   ];

@@ -59,7 +59,7 @@ export function WeddingGallery() {
             data-aos-duration="1000"
             onClick={() => onViewImage(index)}
           >
-            <Image src={item} fill alt="image" loading="lazy" className="object-cover" />
+            <Image src={item} fill alt="image" className="object-cover" />
             <span className="view-finder">
               <RenderIcon name="view-finder" className="text-white" />
             </span>
