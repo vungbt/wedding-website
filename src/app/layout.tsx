@@ -8,7 +8,26 @@ import { Toaster } from 'react-hot-toast';
 export const metadata: Metadata = {
   title: 'BLD - Thanh Vững & Hoàng Diệu',
   description:
-    'Chúng tôi đã tìm thấy nhau và cùng nhau xây dựng một câu chuyện tình yêu đẹp như mơ. Hãy cùng chúng tôi kỷ niệm ngày đặc biệt này và chứng kiến giấc mơ của chúng tôi trở thành hiện thực.'
+    'Chúng tôi đã tìm thấy nhau và cùng nhau xây dựng một câu chuyện tình yêu đẹp như mơ. Hãy cùng chúng tôi kỷ niệm ngày đặc biệt này và chứng kiến giấc mơ của chúng tôi trở thành hiện thực.',
+  openGraph: {
+    images: [
+      'https://res.cloudinary.com/dty5n3qyh/image/upload/v1737478305/assets/NLV_8705_ajrxwg.jpg',
+      'https://res.cloudinary.com/dty5n3qyh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1737478305/assets/NLV_8705_ajrxwg.jpg'
+    ],
+    title: 'BLD - Thanh Vững & Hoàng Diệu',
+    description:
+      'Chúng tôi đã tìm thấy nhau và cùng nhau xây dựng một câu chuyện tình yêu đẹp như mơ. Hãy cùng chúng tôi kỷ niệm ngày đặc biệt này và chứng kiến giấc mơ của chúng tôi trở thành hiện thực.',
+    url: 'https://wedding.vung.dev'
+  },
+  twitter: {
+    images: [
+      'https://res.cloudinary.com/dty5n3qyh/image/upload/v1737478305/assets/NLV_8705_ajrxwg.jpg',
+      'https://res.cloudinary.com/dty5n3qyh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1737478305/assets/NLV_8705_ajrxwg.jpg'
+    ],
+    title: 'BLD - Thanh Vững & Hoàng Diệu',
+    description:
+      'Chúng tôi đã tìm thấy nhau và cùng nhau xây dựng một câu chuyện tình yêu đẹp như mơ. Hãy cùng chúng tôi kỷ niệm ngày đặc biệt này và chứng kiến giấc mơ của chúng tôi trở thành hiện thực.'
+  }
 };
 
 export default function RootLayout({
