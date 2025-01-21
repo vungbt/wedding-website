@@ -11,6 +11,7 @@ type AudioPlayerProps = {
 export function AudioPlayer({ className }: AudioPlayerProps) {
   const [audio, setAudio] = useState(getRandomNumber(7));
   const [isPlaying, setIsPlaying] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const togglePlayPause = () => {
@@ -18,7 +19,9 @@ export function AudioPlayer({ className }: AudioPlayerProps) {
     if (isPlaying) {
       audioRef.current.pause();
     } else {
-      audioRef.current.play();
+      audioRef.current.play().catch((error) => {
+        console.error('Audio play failed:', error);
+      });
     }
     setIsPlaying(!isPlaying);
   };
@@ -27,10 +30,37 @@ export function AudioPlayer({ className }: AudioPlayerProps) {
     setAudio(getRandomNumber(7));
     if (audioRef.current) {
       audioRef.current.load();
-      audioRef.current.play();
-      setIsPlaying(true);
+      audioRef.current
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch((error) => {
+          console.error('Audio play failed:', error);
+        });
     }
   };
+
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      if (hasInteracted) return; // Avoid re-triggering
+      setHasInteracted(true);
+
+      // Play audio immediately after interaction
+      if (audioRef.current) {
+        audioRef.current
+          .play()
+          .then(() => setIsPlaying(true))
+          .catch((error) => {
+            console.error('Audio play failed on interaction:', error);
+          });
+      }
+    };
+
+    window.addEventListener('pointerdown', handleUserInteraction, { once: true });
+
+    return () => {
+      window.removeEventListener('pointerdown', handleUserInteraction);
+    };
+  }, [hasInteracted]);
 
   return (
     <div className={clsx(className, 'fixed z-50 bottom-5 right-10')}>
@@ -58,7 +88,7 @@ export function AudioPlayer({ className }: AudioPlayerProps) {
       </div>
 
       <audio ref={audioRef} controls loop hidden>
-        <source src={`/audio/${audio ?? getRandomNumber(7)}.mp3`} type="audio/mpeg" />
+        <source src={`/audio/${audio}.mp3`} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </div>

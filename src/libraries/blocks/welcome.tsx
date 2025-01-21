@@ -13,7 +13,6 @@ type WelcomeBlockProps = {
 
 export function WelcomeBlock({}: WelcomeBlockProps) {
   const { isMobile, sizes } = useScreen();
-  console.log('sizes==>', sizes);
   const data = useMemo(() => {
     if (sizes.lg)
       return [
