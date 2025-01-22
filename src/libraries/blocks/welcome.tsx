@@ -53,7 +53,7 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 100000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, [data.length]);
@@ -71,7 +71,7 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
             }
           )}
         >
-          <Image fill src={item} alt="image" priority />
+          <Image fill src={item} alt="image" priority className="aspect-3/4" />
         </div>
       ))}
 
