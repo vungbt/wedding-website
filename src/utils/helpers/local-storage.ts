@@ -29,7 +29,6 @@ const localStorageHelper = {
     return defaultValue;
   },
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getObject: (key: EKeyStorage, defaultValue: unknown = {}): any => {
     try {
       const value = localStorage.getItem(key);

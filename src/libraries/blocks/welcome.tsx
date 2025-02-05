@@ -29,7 +29,7 @@ export function WelcomeBlock({}: WelcomeBlockProps) {
       '/welcome/mobile/welcome_4.jpg',
       '/welcome/mobile/welcome_5.jpg'
     ];
-  }, [isMobile]);
+  }, [sizes.lg]);
 
   const blocks = [
     'Chúng tôi đã tìm thấy nhau và cùng nhau xây dựng một câu chuyện tình yêu đẹp như mơ. Hãy cùng chúng tôi kỷ niệm ngày đặc biệt này và chứng kiến giấc mơ của chúng tôi trở thành hiện thực.',
