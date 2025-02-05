@@ -5,6 +5,7 @@ import OverViewItem from '@/libraries/blocks/checking/overview-item';
 import { UserItem, UserStatus, UserType } from '@/types/common';
 import localStorageHelper, { EKeyStorage } from '@/utils/helpers/local-storage';
 import clsx from 'clsx';
+import Link from 'next/link';
 import { ReactNode, useEffect, useMemo, useState } from 'react';
 
 export default function CheckingView() {
@@ -154,7 +155,14 @@ const RowTable = ({
         label={item.type === UserType.Groom ? 'Chú rể' : 'Cô dâu'}
         className="col-span-2"
       />
-      <CellTable label={item.facebook} className="col-span-3" />
+      <CellTable
+        label={
+          <Link target="_blank" href={item.facebook} className="text-info underline">
+            Facebook
+          </Link>
+        }
+        className="col-span-3"
+      />
     </div>
   );
 };
