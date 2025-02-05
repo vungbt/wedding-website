@@ -7,3 +7,4 @@ export * from './location';
 export * from './wedding-gallery';
 export * from './testimonials';
 export * from './attend';
+export * from './checking';

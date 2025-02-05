@@ -58,7 +58,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       </div>
 
       {/* audio */}
-      <AudioPlayer />
+      {/* <AudioPlayer /> */}
     </main>
   );
 }

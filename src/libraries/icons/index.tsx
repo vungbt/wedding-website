@@ -16,6 +16,9 @@ import Volume from './volume';
 import VolumeMute from './volume-mute';
 import Random from './random';
 import ViewFinder from './viewfinder';
+import LampCharge from './lamp-charge';
+import LampSlash from './lamp-slash';
+import Message from './message';
 export type IconProps = {
   className?: string;
   style?: CSSProperties;
@@ -42,7 +45,10 @@ export type IconName =
   | 'volume'
   | 'volume-mute'
   | 'random'
-  | 'view-finder';
+  | 'view-finder'
+  | 'lamp-charge'
+  | 'lamp-slash'
+  | 'message';
 export type IconsType = Record<IconName, Icon>;
 
 export const Icons: IconsType = {
@@ -96,6 +102,15 @@ export const Icons: IconsType = {
   },
   'view-finder': (props: IconProps) => {
     return <ViewFinder {...props} />;
+  },
+  'lamp-charge': (props: IconProps) => {
+    return <LampCharge {...props} />;
+  },
+  'lamp-slash': (props: IconProps) => {
+    return <LampSlash {...props} />;
+  },
+  message: (props: IconProps) => {
+    return <Message {...props} />;
   }
 };
 
