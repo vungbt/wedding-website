@@ -103,20 +103,13 @@ export const users: UserItem[] = [
   },
   {
     id: 15,
-    name: 'Quỳnh Quỳnh',
-    type: UserType.Groom,
-    facebook: 'https://www.facebook.com/caonhu.quynh.9#',
-    status: UserStatus.Inactive
-  },
-  {
-    id: 16,
     name: 'Bạn Tâm',
     type: UserType.Groom,
     facebook: 'https://www.facebook.com/tam.780379#',
     status: UserStatus.Inactive
   },
   {
-    id: 17,
+    id: 16,
     name: 'Lê Thanh Tú',
     type: UserType.Groom,
     facebook: 'https://www.facebook.com/le.thanhtu.129#',
